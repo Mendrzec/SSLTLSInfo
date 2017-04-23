@@ -24,6 +24,10 @@
   <ItemGroup>
     <Compile Include="SSLTLSInfo_1.py" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="websites.txt" />
+    <Content Include="websites_short.txt" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>

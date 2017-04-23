@@ -1,0 +1,386 @@
+{
+  "CERTS": [
+    {
+      "!Host": "153.19.49.144", 
+      "HashAlgorithm": "sha1WithRSAEncryption", 
+      "Issuer": {
+        "C": "PL", 
+        "CN": "153.19.49.144", 
+        "L": "Gdansk", 
+        "O": "Gdansk University of Technology", 
+        "OU": "Department of Geoinformatics", 
+        "ST": "Pomerian", 
+        "emailAddress": "ksg@eti.pg.gda.pl"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 17692145209644778822, 
+      "Subject": {
+        "C": "PL", 
+        "CN": "153.19.49.144", 
+        "L": "Gdansk", 
+        "O": "Gdansk University of Technology", 
+        "OU": "Department of Geoinformatics", 
+        "ST": "Pomerian", 
+        "emailAddress": "ksg@eti.pg.gda.pl"
+      }, 
+      "ValidSince": "26-09-2016", 
+      "ValidTo": "26-09-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "google.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Google Internet Authority G2", 
+        "O": "Google Inc"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 2740399033781354958, 
+      "Subject": {
+        "C": "US", 
+        "CN": "*.google.com", 
+        "L": "Mountain View", 
+        "O": "Google Inc", 
+        "ST": "California"
+      }, 
+      "ValidSince": "12-04-2017", 
+      "ValidTo": "05-07-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "youtube.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Google Internet Authority G2", 
+        "O": "Google Inc"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 2740399033781354958, 
+      "Subject": {
+        "C": "US", 
+        "CN": "*.google.com", 
+        "L": "Mountain View", 
+        "O": "Google Inc", 
+        "ST": "California"
+      }, 
+      "ValidSince": "12-04-2017", 
+      "ValidTo": "05-07-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "facebook.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "DigiCert SHA2 High Assurance Server CA", 
+        "O": "DigiCert Inc", 
+        "OU": "www.digicert.com"
+      }, 
+      "PKeyBits": 256, 
+      "Serial": 15953853723547942980593446236742908956, 
+      "Subject": {
+        "C": "US", 
+        "CN": "*.facebook.com", 
+        "L": "Menlo Park", 
+        "O": "Facebook, Inc.", 
+        "ST": "California"
+      }, 
+      "ValidSince": "09-12-2016", 
+      "ValidTo": "25-01-2018", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "wikipedia.org", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "DigiCert SHA2 High Assurance Server CA", 
+        "O": "DigiCert Inc", 
+        "OU": "www.digicert.com"
+      }, 
+      "PKeyBits": 256, 
+      "Serial": 7525505175963169808968015778769157236, 
+      "Subject": {
+        "C": "US", 
+        "CN": "*.wikipedia.org", 
+        "L": "San Francisco", 
+        "O": "Wikimedia Foundation, Inc.", 
+        "ST": "California"
+      }, 
+      "ValidSince": "19-12-2016", 
+      "ValidTo": "03-01-2018", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "yahoo.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Symantec Class 3 Secure Server CA - G4", 
+        "O": "Symantec Corporation", 
+        "OU": "Symantec Trust Network"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 37411858960954730393170991692155309285, 
+      "Subject": {
+        "C": "US", 
+        "CN": "www.yahoo.com", 
+        "L": "Sunnyvale", 
+        "O": "Yahoo Inc.", 
+        "OU": "Information Technology", 
+        "ST": "California"
+      }, 
+      "ValidSince": "31-10-2015", 
+      "ValidTo": "30-10-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "reddit.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "DigiCert SHA2 Secure Server CA", 
+        "O": "DigiCert Inc"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 11711178161886346105980166697563149367, 
+      "Subject": {
+        "C": "US", 
+        "CN": "*.reddit.com", 
+        "L": "San Francisco", 
+        "O": "Reddit Inc.", 
+        "ST": "California"
+      }, 
+      "ValidSince": "17-08-2015", 
+      "ValidTo": "21-08-2018", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "google.co.in", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Google Internet Authority G2", 
+        "O": "Google Inc"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 4414047499155602389, 
+      "Subject": {
+        "C": "US", 
+        "CN": "google.com", 
+        "L": "Mountain View", 
+        "O": "Google Inc", 
+        "ST": "California"
+      }, 
+      "ValidSince": "12-04-2017", 
+      "ValidTo": "05-07-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "taobao.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "BE", 
+        "CN": "GlobalSign Organization Validation CA - SHA256 - G2", 
+        "O": "GlobalSign nv-sa"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 21445208397513806030289994143, 
+      "Subject": {
+        "C": "CN", 
+        "CN": "*.tmall.com", 
+        "L": "HangZhou", 
+        "O": "Alibaba (China) Technology Co., Ltd.", 
+        "ST": "ZheJiang"
+      }, 
+      "ValidSince": "06-12-2016", 
+      "ValidTo": "03-12-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "amazon.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Symantec Class 3 Secure Server CA - G4", 
+        "O": "Symantec Corporation", 
+        "OU": "Symantec Trust Network"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 38935688726887244837085018901951706722, 
+      "Subject": {
+        "C": "US", 
+        "CN": "www.amazon.com", 
+        "L": "Seattle", 
+        "O": "Amazon.com, Inc.", 
+        "ST": "Washington"
+      }, 
+      "ValidSince": "31-10-2016", 
+      "ValidTo": "31-12-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "twitter.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Symantec Class 3 Secure Server CA - G4", 
+        "O": "Symantec Corporation", 
+        "OU": "Symantec Trust Network"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 145422159534118394407654467814733144326, 
+      "Subject": {
+        "C": "US", 
+        "CN": "twitter.com", 
+        "L": "San Francisco", 
+        "O": "Twitter, Inc.", 
+        "OU": "FRA2 Point of Presence", 
+        "ST": "California"
+      }, 
+      "ValidSince": "10-08-2015", 
+      "ValidTo": "10-08-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "google.co.jp", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Google Internet Authority G2", 
+        "O": "Google Inc"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 4414047499155602389, 
+      "Subject": {
+        "C": "US", 
+        "CN": "google.com", 
+        "L": "Mountain View", 
+        "O": "Google Inc", 
+        "ST": "California"
+      }, 
+      "ValidSince": "12-04-2017", 
+      "ValidTo": "05-07-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "sohu.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "GeoTrust SSL CA - G3", 
+        "O": "GeoTrust Inc."
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 12012363419118884032113083857972952077, 
+      "Subject": {
+        "C": "CN", 
+        "CN": "www.sohu.com", 
+        "L": "beijing", 
+        "O": "Beijing Sohu New Media Information Technology Co. Ltd", 
+        "OU": "Tech", 
+        "ST": "beijing"
+      }, 
+      "ValidSince": "16-01-2017", 
+      "ValidTo": "16-12-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "live.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "Symantec Class 3 EV SSL CA - G3", 
+        "O": "Symantec Corporation", 
+        "OU": "Symantec Trust Network"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 147141277723195648410978432638671600326, 
+      "Subject": {
+        "C": "US", 
+        "CN": "mail.live.com", 
+        "L": "Redmond", 
+        "O": "Microsoft Corporation", 
+        "OU": "Outlook Kahuna BLU-A 22Jun2015", 
+        "ST": "Washington", 
+        "businessCategory": "Private Organization", 
+        "jurisdictionC": "US", 
+        "jurisdictionST": "Washington", 
+        "postalCode": "98052", 
+        "serialNumber": "600413485", 
+        "street": "1 Microsoft Way"
+      }, 
+      "ValidSince": "23-06-2015", 
+      "ValidTo": "23-06-2017", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "vk.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "RU", 
+        "CN": "www.vk", 
+        "L": "Saint-Petersburg", 
+        "O": "Vkonteks LLC", 
+        "ST": "Saint-Petersburg"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 9486048977081157921, 
+      "Subject": {
+        "C": "RU", 
+        "CN": "www.vk", 
+        "L": "Saint-Petersburg", 
+        "O": "Vkontakt LLC", 
+        "ST": "Saint-Petersburg"
+      }, 
+      "ValidSince": "20-03-2017", 
+      "ValidTo": "19-03-2020", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "instagram.com", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "US", 
+        "CN": "DigiCert SHA2 High Assurance Server CA", 
+        "O": "DigiCert Inc", 
+        "OU": "www.digicert.com"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 17678049977263666662694695686089050820, 
+      "Subject": {
+        "C": "US", 
+        "CN": "*.instagram.com", 
+        "L": "Menlo Park", 
+        "O": "Facebook, Inc.", 
+        "ST": "California"
+      }, 
+      "ValidSince": "10-12-2016", 
+      "ValidTo": "25-01-2018", 
+      "Version": 2
+    }, 
+    {
+      "!Host": "360.cn", 
+      "HashAlgorithm": "sha256WithRSAEncryption", 
+      "Issuer": {
+        "C": "CN", 
+        "CN": "WoSign OV SSL CA", 
+        "O": "WoSign CA Limited"
+      }, 
+      "PKeyBits": 2048, 
+      "Serial": 18161998533841766879165675264103641874, 
+      "Subject": {
+        "C": "CN", 
+        "CN": "*.360.cn", 
+        "L": "\u5317\u4eac\u5e02", 
+        "O": "\u5317\u4eac\u5947\u864e\u79d1\u6280\u6709\u9650\u516c\u53f8", 
+        "ST": "\u5317\u4eac\u5e02"
+      }, 
+      "ValidSince": "02-12-2016", 
+      "ValidTo": "02-12-2019", 
+      "Version": 2
+    }
+  ]
+}

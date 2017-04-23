@@ -2,48 +2,63 @@ import ssl
 import socket
 import OpenSSL
 import datetime
+import os
+import pyping
+import sys
+import json
+import time
 
-HOST = 'www.github.com'
-PORT = 443
-cert = None
+websites_file = open("websites_short.txt", "r")
+websites_list = websites_file.readlines()
+websites_file.close()
 
+json_raport = {}
+json_raport["CERTS"] = []
 
-sock = socket.socket()
-sock.settimeout(2)
-try:
-    sock.connect((HOST,PORT))
-    ssl_sock = ssl.wrap_socket(sock)
-    cert_der = ssl_sock.getpeercert(True)
-    cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_ASN1, cert_der)
-except socket.timeout:
-    print('Connection timed out')
+for website in websites_list:
+#if 1:
 
-if cert != None :
-    cert_hash_alg = cert.get_signature_algorithm()
-    cert_valid_since = cert.get_notBefore()  #formatted as ASN.1 GENERALIZEDTIME
-    cert_valid_to = cert.get_notAfter()
-    cert_issuer = cert.get_issuer() #returns X509Name obj
-    cert_pkey = cert.get_pubkey()   #return PKey obj
-    cert_subject = cert.get_subject() #X509Name obj
-    cert_version = cert.get_version()
-    cert_serial = cert.get_serial_number()
+    #HOST = 'github.com'
+    HOST = website.translate(None, ' \n\t\r')
+    PORT = 443
+    cert = None
+    cert_json_obj = {}
+    print('Pinging ' + HOST + '...')
+    response = os.system("ping -n 1 -w 1000 " + HOST)
+    if response == 0:  
+        #TRY TO GET SSL BANNER
 
-    list = cert_issuer.get_components()
-    print('Wystawiony przez: ')
-    print(list)
+        sock = socket.socket()
+        sock.settimeout(2)
+        try:
+            sock.connect((HOST,PORT))
+            ssl_sock = ssl.wrap_socket(sock)
+            cert_der = ssl_sock.getpeercert(True)
+            cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_ASN1, cert_der)
+        except socket.timeout:
+            print('Connection to ' + HOST + ':' + str(PORT) + 'timed out.')
+        except socket.error:
+            print('Connection to ' + HOST + ':' + str(PORT) + ' impossible.')
 
-    print('Wystawiony dla: ')
-    list = cert_subject.get_components()
-    print(list)
+        if cert != None :
+            
+            cert_json_obj["!Host"] = HOST
+            cert_json_obj["Subject"] = dict(cert.get_subject().get_components())
+            cert_json_obj["Issuer"] = dict(cert.get_issuer().get_components())
+            cert_json_obj["HashAlgorithm"] = cert.get_signature_algorithm()
+            cert_json_obj["ValidSince"] = time.strftime('%d-%m-%Y', time.strptime(cert.get_notBefore(), '%Y%m%d%H%M%SZ'))
+            cert_json_obj["ValidTo"] = time.strftime('%d-%m-%Y', time.strptime(cert.get_notAfter(), '%Y%m%d%H%M%SZ'))
+            cert_json_obj["Version"] = cert.get_version()
+            cert_json_obj["Serial"] = cert.get_serial_number()
+            cert_json_obj["PKeyBits"] = cert.get_pubkey().bits()
 
-    print('Algorytm hashujacy: ')
-    print(cert_hash_alg)
+            json_raport["CERTS"].append(cert_json_obj)
 
-    print('Numer seryjny: ')
-    print(cert_serial)
+    else:
+        continue
 
-    print('Ważny od: ')
-    datetime.datetime.strptime(cert_valid_since.encode('UTF-8'), "%Y%m%d%H%M%S%Z")
-    print('Ważny do: ')
-    datetime.datetime.strptime(cert_valid_to, "%Y%m%d%H%M%SZ")
+    #print json.dumps(json_raport, sort_keys=True, indent = 2)
 
+raport_file = open('raport.json', 'w')
+raport_file.write(json.dumps(json_raport, sort_keys=True, indent = 2))
+raport_file.close()
