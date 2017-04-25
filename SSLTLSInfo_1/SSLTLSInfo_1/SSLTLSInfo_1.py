@@ -33,7 +33,7 @@ for website in websites_list:
 
     print('********************************************************** SCAN PROGRESS ***** ' + str(progress*1.0/websites_count*100) + ' %')
     print('Pinging ' + HOST + '...')
-    response = os.system("ping -n 1 -w 2000 " + HOST)
+    response = os.system("ping -n 1 -w 500 " + HOST)
     if response == 0:  
         #TRY TO GET SSL BANNER
 
@@ -79,7 +79,6 @@ for website in websites_list:
     else:
         continue
 
-    #print json.dumps(json_raport, sort_keys=True, indent = 2)
 
 raport_file = open('raport.json', 'w')
 raport_file.write(json.dumps(json_raport, sort_keys=True, indent = 2))
